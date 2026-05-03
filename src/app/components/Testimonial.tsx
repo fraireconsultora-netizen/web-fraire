@@ -3,6 +3,7 @@ import { Play, Quote, ArrowRight } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
 import { Badge } from '@/app/components/ui/badge';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { CaseStudy } from "./CaseStudy"
 
 export function Testimonial() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -155,8 +156,10 @@ export function Testimonial() {
           </div>
         </div>
 
+        <CaseStudy/>
+
         {/* Secondary Testimonials - Mini cards */}
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
+        {/* <div className="grid md:grid-cols-3 gap-6 mt-12">
           {[
             {
               quote: 'Reducimos el tiempo de inventario mensual de 3 días a 4 horas',
@@ -191,7 +194,7 @@ export function Testimonial() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

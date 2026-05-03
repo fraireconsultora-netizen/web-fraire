@@ -10,12 +10,12 @@ export function FAQ() {
     {
       question: '¿Cuánto tiempo demora una implementación de Odoo?',
       answer:
-        'Depende del alcance y complejidad de tu negocio. Una implementación estándar (ventas, compras, inventario, contabilidad) toma entre 8 y 12 semanas desde el kick-off hasta el go-live. Proyectos más complejos con manufactura, integraciones múltiples o desarrollos a medida pueden extenderse a 16-20 semanas. Siempre trabajamos con fases iterativas para que puedas empezar a operar módulos críticos antes de completar el 100%.',
+        'Depende del alcance y complejidad de tu negocio. Una implementación estándar (ventas, compras, inventario, contabilidad) toma entre 8 y 12 semanas desde el kick-off hasta el go-live. Proyectos más complejos con manufactura, integraciones múltiples o desarrollos a medida pueden extenderse a 16-20 semanas.',
     },
     {
       question: '¿Cuál es el costo aproximado de implementar Odoo?',
       answer:
-        'El costo varía según la cantidad de usuarios, módulos necesarios y nivel de personalización. Odoo tiene licencias Community (gratuita, código abierto) y Enterprise (de pago, con soporte oficial). Nuestro servicio de implementación incluye análisis, configuración, migración, capacitación y go-live. En la sesión de diagnóstico te brindamos un presupuesto detallado según tu caso particular. Como referencia, proyectos típicos arrancan desde USD 10.000.',
+        'El costo de la implementación varía según la cantidad de usuarios, módulos necesarios y nivel de personalización. Primero se debe contratar la licencia del sistema ERP Odoo que puede ser estándar o personalizada, variando según contratación mensual o anual. Nuestro servicio de implementación incluye análisis, configuración, migración, capacitación y go-live. En el encuentro de consulta te brindamos un presupuesto detallado según tu caso particular.'
     },
     {
       question: '¿Cómo migran los datos de nuestro sistema actual?',
@@ -25,7 +25,7 @@ export function FAQ() {
     {
       question: '¿Odoo se integra con nuestras herramientas actuales?',
       answer:
-        'Sí. Odoo tiene conectores nativos para e-commerce (Shopify, WooCommerce, MercadoLibre), pagos (Stripe, PayPal, MercadoPago), logística (correos y transportes), BI (Power BI, Metabase) y muchos más. Si no existe conector nativo, desarrollamos integraciones personalizadas vía API REST. También conectamos con bancos para conciliación automática y facturación electrónica según normativa local.',
+        'Sí. Odoo tiene conectores nativos para e-commerce (Shopify, WooCommerce, MercadoLibre), pagos (Stripe, PayPal, MercadoPago), logística (correos y transportes), BI (Power BI, Metabase) y muchos más. Si no existe conector nativo, desarrollamos integraciones personalizadas vía API REST. También conectamos con bancos para conciliación automática y facturación electrónica.',
     },
     {
       question: '¿Qué tipo de soporte ofrecen post implementación?',
@@ -35,7 +35,7 @@ export function FAQ() {
     {
       question: '¿Capacitan a nuestro equipo?',
       answer:
-        'Absolutamente. La capacitación es parte integral de la implementación. Hacemos training diferenciado por roles: usuarios operativos (cómo usar cada módulo en su día a día), supervisores (reportes, configuración básica) y administradores (gestión de usuarios, parámetros avanzados). Entregamos manuales, videos grabados y sesiones hands-on. Post go-live, ofrecemos refuerzos y capacitación para nuevos usuarios.',
+        'Absolutamente. La capacitación es parte integral de la implementación. Hacemos training diferenciado por roles: usuarios operativos (cómo usar cada módulo en su día a día), supervisores (reportes, configuración básica) y administradores (gestión de usuarios, parámetros avanzados). Post go-live, ofrecemos refuerzos y capacitación para nuevos usuarios.',
     },
   ];
 

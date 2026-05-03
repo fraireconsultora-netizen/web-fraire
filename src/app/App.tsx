@@ -19,12 +19,12 @@ export default function App() {
         <Hero />
         {/* <TrustBar /> */}
         <Services />
-        <Industries />
+        {/* <Industries /> */}
         <Methodology />
         <Testimonial />
-        <CaseStudy />
-        <FAQ />
+        {/* <CaseStudy /> */}
         <ContactCTA />
+        <FAQ />
       </main>
       <Footer />
       <ScrollToTop />

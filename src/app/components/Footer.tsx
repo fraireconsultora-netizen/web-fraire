@@ -10,16 +10,12 @@ export function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-[#FB923C] to-[#F97316] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">O</span>
-              </div>
-              <span className="text-lg font-semibold">OdooExpertos</span>
+              <span className="text-lg font-semibold">Fraire Consultora</span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">
-              Consultora especializada en implementación de Odoo ERP. Transformamos operaciones
-              caóticas en sistemas eficientes y escalables.
+              Consultora de implementación de Odoo ERP.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a
                 href="https://linkedin.com"
                 target="_blank"
@@ -34,7 +30,7 @@ export function Footer() {
               >
                 <Mail className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact */}
@@ -44,21 +40,27 @@ export function Footer() {
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <a
-                  href="mailto:contacto@odooexpertos.com"
+                  href="mailto:fraireconsultora@gmail.com"
                   className="hover:text-[#FB923C] transition-colors"
                 >
-                  contacto@odooexpertos.com
+                  fraireconsultora@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="tel:+5491112345678" className="hover:text-[#FB923C] transition-colors">
-                  +54 9 11 1234-5678
+                <a href="https://wa.me/5493492211070" className="hover:text-[#FB923C] transition-colors" target='_blank'>
+                  +54 9 3492 211070
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <a href="https://wa.me/5493492317862" className="hover:text-[#FB923C] transition-colors" target='_blank'>
+                  +54 9 3492 317862
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Buenos Aires, Argentina</span>
+                <span>Rafaela, Santa Fe, Argentina</span>
               </li>
             </ul>
           </div>
@@ -77,18 +79,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#industrias"
+                  href="#metodologia"
                   className="hover:text-[#FB923C] transition-colors inline-block"
                 >
-                  Industrias
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#casos"
-                  className="hover:text-[#FB923C] transition-colors inline-block"
-                >
-                  Casos de éxito
+                  Metodología
                 </a>
               </li>
               <li>
@@ -96,7 +90,7 @@ export function Footer() {
                   href="#testimonio"
                   className="hover:text-[#FB923C] transition-colors inline-block"
                 >
-                  Testimonios
+                  Casos de éxito
                 </a>
               </li>
               <li>
@@ -114,8 +108,8 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
-            <p>© {currentYear} OdooExpertos. Todos los derechos reservados.</p>
-            <div className="flex gap-6">
+            <p>© {currentYear} Fraire Consultora. Todos los derechos reservados.</p>
+            {/* <div className="flex gap-6">
               <a href="#" className="hover:text-[#FB923C] transition-colors">
                 Privacidad
               </a>
@@ -125,7 +119,7 @@ export function Footer() {
               <a href="#" className="hover:text-[#FB923C] transition-colors">
                 Cookies
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

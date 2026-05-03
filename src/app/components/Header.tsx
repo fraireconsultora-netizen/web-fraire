@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
+import fraireLogoSrc from '@/assets/fraire_logo.png';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ export function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <div className="flex items-center gap-2">
-              <span className="text-lg font-semibold text-[#0F172A]">Fraire consultora</span>
+              <img src={fraireLogoSrc} alt="Fraire Consultora" width={120} />
             </div>
           </div>
 
@@ -32,23 +33,29 @@ export function Header() {
             >
               Servicios
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection('industrias')}
               className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
             >
               Industrias
-            </button>
+            </button> */}
             <button
-              onClick={() => scrollToSection('casos')}
+              onClick={() => scrollToSection('metodologia')}
               className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
             >
-              Casos
+              Metodología
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection('testimonio')}
               className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
             >
               Testimonio
+            </button> */}
+            <button
+              onClick={() => scrollToSection('testimonio')}
+              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
+            >
+              Casos de éxito
             </button>
             <button
               onClick={() => scrollToSection('contacto')}

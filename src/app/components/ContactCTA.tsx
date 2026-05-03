@@ -5,20 +5,63 @@ import { Input } from '@/app/components/ui/input';
 import { Textarea } from '@/app/components/ui/textarea';
 import { Label } from '@/app/components/ui/label';
 
-export function ContactCTA() {
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    empresa: '',
-    mensaje: '',
-  });
+const initialFormData = {
+  nombre: '',
+  email: '',
+  empresa: '',
+  mensaje: '',
+};
 
-  const handleSubmit = (e: React.FormEvent) => {
+const contactApiUrl = import.meta.env.VITE_CONTACT_API_URL;
+
+export function ContactCTA() {
+  const [formData, setFormData] = useState(initialFormData);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{
+    type: 'success' | 'error';
+    text: string;
+  } | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí iría la lógica de envío del formulario
-    console.log('Form submitted:', formData);
-    alert('¡Gracias! Te contactaremos pronto para agendar tu diagnóstico.');
-    setFormData({ nombre: '', email: '', empresa: '', mensaje: '' });
+    setIsSubmitting(true);
+    setSubmitMessage(null);
+
+    try {
+      if (!contactApiUrl) {
+        throw new Error('Falta configurar la URL del servicio de contacto.');
+      }
+
+      const response = await fetch(contactApiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json().catch(() => null);
+
+      if (!response.ok) {
+        throw new Error(result?.message || 'No pudimos enviar tu consulta. Intentá nuevamente.');
+      }
+
+      setSubmitMessage({
+        type: 'success',
+        text: 'Gracias. Recibimos tu consulta y te responderemos en menos de 24 horas.',
+      });
+      setFormData(initialFormData);
+    } catch (error) {
+      setSubmitMessage({
+        type: 'error',
+        text:
+          error instanceof Error
+            ? error.message
+            : 'No pudimos enviar tu consulta. Intentá nuevamente.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -39,21 +82,19 @@ export function ContactCTA() {
             {/* Left: Content */}
             <div className="bg-gradient-to-br from-[#FB923C] to-[#F97316] p-8 md:p-12 text-white flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Agendá un diagnóstico gratuito
+                Agendá tu consulta
               </h2>
               <p className="text-lg mb-8 text-white/90 leading-relaxed">
-                En 30 minutos te decimos qué módulos implementar, en qué orden y cuál es el ROI
-                esperado para tu caso específico.
+              En un encuentro analizamos tu negocio y te damos un plan claro para implementar software que se adapte a tus necesidades.
               </p>
-
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                     <span className="text-xs">✓</span>
                   </div>
                   <div>
-                    <p className="font-semibold">Diagnóstico sin costo</p>
-                    <p className="text-sm text-white/80">Análisis de procesos y necesidades</p>
+                    <p className="font-semibold">Diagnóstico inicial</p>
+                    <p className="text-sm text-white/80">Listado de procesos y necesidades</p>
                   </div>
                 </div>
 
@@ -62,8 +103,8 @@ export function ContactCTA() {
                     <span className="text-xs">✓</span>
                   </div>
                   <div>
-                    <p className="font-semibold">Roadmap personalizado</p>
-                    <p className="text-sm text-white/80">Módulos y fases sugeridas</p>
+                    <p className="font-semibold">Plan de implementación claro</p>
+                    <p className="text-sm text-white/80">Qué módulos desarrollar, en qué orden y por qué</p>
                   </div>
                 </div>
 
@@ -72,8 +113,8 @@ export function ContactCTA() {
                     <span className="text-xs">✓</span>
                   </div>
                   <div>
-                    <p className="font-semibold">Presupuesto estimado</p>
-                    <p className="text-sm text-white/80">Tiempos y costos transparentes</p>
+                    <p className="font-semibold">Estimación de inversión y tiempos</p>
+                    <p className="text-sm text-white/80">Tiempos y costos de implementación</p>
                   </div>
                 </div>
               </div>
@@ -147,11 +188,24 @@ export function ContactCTA() {
 
                 <Button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full bg-[#FB923C] hover:bg-[#F97316] text-white py-6 text-base"
                 >
-                  Solicitar diagnóstico gratuito
+                  {isSubmitting ? 'Enviando consulta...' : 'Solicitar diagnóstico gratuito'}
                   <Send className="ml-2 w-5 h-5" />
                 </Button>
+
+                {submitMessage && (
+                  <p
+                    role="status"
+                    aria-live="polite"
+                    className={`text-sm text-center ${
+                      submitMessage.type === 'success' ? 'text-green-700' : 'text-red-600'
+                    }`}
+                  >
+                    {submitMessage.text}
+                  </p>
+                )}
 
                 <p className="text-xs text-[#64748B] text-center">
                   Te responderemos en menos de 24 horas. Sin compromiso.

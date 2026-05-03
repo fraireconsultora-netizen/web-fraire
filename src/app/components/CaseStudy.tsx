@@ -15,19 +15,16 @@ export function CaseStudy() {
   ];
 
   return (
-    <section id="casos" className="py-16 md:py-24 bg-[#F8FAFC]">
+    <section id="casos" className="py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
-            {/* <span className="text-sm text-[#FB923C] font-medium">Caso de éxito</span> */}
-          </div>
+          {/* <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
+            <span className="text-sm text-[#FB923C] font-medium">Caso de éxito</span>
+          </div> */}
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
-            De caos operativo a eficiencia medible
+            Resultados clave
           </h2>
-          <p className="text-lg text-[#64748B]">
-            Distribuidora del Sur: 120 empleados, 5 sucursales, +3.000 SKUs
-          </p>
         </div>
 
         {/* Before/After Comparison */}
@@ -120,7 +117,7 @@ export function CaseStudy() {
         </div>
 
         {/* Key Results Banner */}
-        <div className="bg-white rounded-2xl p-8 border border-[#E7E9F2] shadow-lg">
+        {/* <div className="bg-white rounded-2xl p-8 border border-[#E7E9F2] shadow-lg">
           <h3 className="text-center text-xl font-bold text-[#0F172A] mb-8">
             Resultados clave en 6 meses
           </h3>
@@ -139,16 +136,16 @@ export function CaseStudy() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Image */}
-        <div className="mt-12 rounded-2xl overflow-hidden shadow-xl border border-[#E7E9F2]">
+        {/* <div className="mt-12 rounded-2xl overflow-hidden shadow-xl border border-[#E7E9F2]">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBpbnZlbnRvcnklMjBsb2dpc3RpY3N8ZW58MXx8fHwxNzY5MDYyMTc2fDA&ixlib=rb-4.1.0&q=80&w=1080"
             alt="Almacén operando con Odoo"
             className="w-full h-auto"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );
