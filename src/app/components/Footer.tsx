@@ -20,13 +20,13 @@ export function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 hover:bg-[#FB923C] rounded-lg flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-white/10 hover:bg-[#ed6b1d] rounded-lg flex items-center justify-center transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="mailto:contacto@odooexpertos.com"
-                className="w-10 h-10 bg-white/10 hover:bg-[#FB923C] rounded-lg flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-white/10 hover:bg-[#ed6b1d] rounded-lg flex items-center justify-center transition-colors"
               >
                 <Mail className="w-5 h-5" />
               </a>
@@ -41,20 +41,20 @@ export function Footer() {
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <a
                   href="mailto:fraireconsultora@gmail.com"
-                  className="hover:text-[#FB923C] transition-colors"
+                  className="hover:text-[#ed6b1d] transition-colors"
                 >
                   fraireconsultora@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="https://wa.me/5493492211070" className="hover:text-[#FB923C] transition-colors" target='_blank'>
+                <a href="https://wa.me/5493492211070" className="hover:text-[#ed6b1d] transition-colors" target='_blank'>
                   +54 9 3492 211070
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="https://wa.me/5493492317862" className="hover:text-[#FB923C] transition-colors" target='_blank'>
+                <a href="https://wa.me/5493492317862" className="hover:text-[#ed6b1d] transition-colors" target='_blank'>
                   +54 9 3492 317862
                 </a>
               </li>
@@ -72,7 +72,7 @@ export function Footer() {
               <li>
                 <a
                   href="#servicios"
-                  className="hover:text-[#FB923C] transition-colors inline-block"
+                  className="hover:text-[#ed6b1d] transition-colors inline-block"
                 >
                   Servicios
                 </a>
@@ -80,7 +80,7 @@ export function Footer() {
               <li>
                 <a
                   href="#metodologia"
-                  className="hover:text-[#FB923C] transition-colors inline-block"
+                  className="hover:text-[#ed6b1d] transition-colors inline-block"
                 >
                   Metodología
                 </a>
@@ -88,7 +88,7 @@ export function Footer() {
               <li>
                 <a
                   href="#testimonio"
-                  className="hover:text-[#FB923C] transition-colors inline-block"
+                  className="hover:text-[#ed6b1d] transition-colors inline-block"
                 >
                   Casos de éxito
                 </a>
@@ -96,7 +96,7 @@ export function Footer() {
               <li>
                 <a
                   href="#contacto"
-                  className="hover:text-[#FB923C] transition-colors inline-block"
+                  className="hover:text-[#ed6b1d] transition-colors inline-block"
                 >
                   Contacto
                 </a>
@@ -110,13 +110,13 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
             <p>© {currentYear} Fraire Consultora. Todos los derechos reservados.</p>
             {/* <div className="flex gap-6">
-              <a href="#" className="hover:text-[#FB923C] transition-colors">
+              <a href="#" className="hover:text-[#ed6b1d] transition-colors">
                 Privacidad
               </a>
-              <a href="#" className="hover:text-[#FB923C] transition-colors">
+              <a href="#" className="hover:text-[#ed6b1d] transition-colors">
                 Términos
               </a>
-              <a href="#" className="hover:text-[#FB923C] transition-colors">
+              <a href="#" className="hover:text-[#ed6b1d] transition-colors">
                 Cookies
               </a>
             </div> */}

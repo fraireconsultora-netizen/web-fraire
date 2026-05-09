@@ -16,12 +16,12 @@ export function Testimonial() {
   };
 
   return (
-    <section id="testimonio" className="py-16 md:py-24 bg-white">
+    <section id="testimonio" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
-            <span className="text-sm text-[#FB923C] font-medium">Casos de éxito</span>
+            <span className="text-sm text-[#ed6b1d] font-medium">Casos de éxito</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
             Escuchá de primera mano el impacto real
@@ -38,7 +38,7 @@ export function Testimonial() {
             {/* Left: Testimonial Content */}
             <div className="p-8 md:p-12 flex flex-col justify-center">
               <div className="mb-6">
-                <Quote className="w-12 h-12 text-[#FB923C] opacity-20" />
+                <Quote className="w-12 h-12 text-[#ed6b1d] opacity-20" />
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-[#0F172A] mb-6 leading-tight">
@@ -81,13 +81,13 @@ export function Testimonial() {
                 <p className="text-sm text-[#64748B]">
                   CFO / Director de Operaciones · Distribuidora del Sur
                 </p>
-                <p className="text-sm text-[#FB923C] mt-1">Industria: Distribución mayorista</p>
+                <p className="text-sm text-[#ed6b1d] mt-1">Industria: Distribución mayorista</p>
               </div>
 
               {/* CTA */}
               <Button
                 onClick={scrollToContact}
-                className="bg-[#FB923C] hover:bg-[#F97316] text-white w-full md:w-auto"
+                className="bg-[#ed6b1d] hover:bg-[#F97316] text-white w-full md:w-auto"
               >
                 Quiero resultados así
                 <ArrowRight className="ml-2 w-4 h-4" />
@@ -113,7 +113,7 @@ export function Testimonial() {
                   className="absolute inset-0 flex items-center justify-center group cursor-pointer"
                   aria-label="Reproducir video"
                 >
-                  <div className="w-20 h-20 bg-[#FB923C] hover:bg-[#F97316] rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 ring-4 ring-white/20">
+                  <div className="w-20 h-20 bg-[#ed6b1d] hover:bg-[#F97316] rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 ring-4 ring-white/20">
                     <Play className="w-10 h-10 text-white ml-1" fill="white" />
                   </div>
                 </button>
@@ -140,7 +140,7 @@ export function Testimonial() {
                       </p>
                       <button
                         onClick={() => setIsPlaying(false)}
-                        className="mt-4 px-4 py-2 bg-[#FB923C] hover:bg-[#F97316] rounded-lg text-sm transition-colors"
+                        className="mt-4 px-4 py-2 bg-[#ed6b1d] hover:bg-[#F97316] rounded-lg text-sm transition-colors"
                       >
                         Cerrar
                       </button>
@@ -150,7 +150,7 @@ export function Testimonial() {
               </div>
 
               {/* Decorative Elements */}
-              <div className="absolute top-8 right-8 w-32 h-32 bg-[#FB923C]/10 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute top-8 right-8 w-32 h-32 bg-[#ed6b1d]/10 rounded-full blur-3xl animate-pulse"></div>
               <div className="absolute bottom-8 left-8 w-40 h-40 bg-[#F97316]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
@@ -184,7 +184,7 @@ export function Testimonial() {
               key={index}
               className="bg-white rounded-xl p-6 border border-[#E7E9F2] hover:border-[#FED7AA] hover:shadow-md transition-all"
             >
-              <Quote className="w-8 h-8 text-[#FB923C] opacity-20 mb-4" />
+              <Quote className="w-8 h-8 text-[#ed6b1d] opacity-20 mb-4" />
               <p className="text-[#0F172A] mb-4 leading-relaxed">"{testimonial.quote}"</p>
               <div className="border-t border-[#E7E9F2] pt-4">
                 <p className="font-semibold text-sm text-[#0F172A]">{testimonial.author}</p>

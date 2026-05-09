@@ -20,8 +20,8 @@ export default function App() {
         {/* <TrustBar /> */}
         <Services />
         {/* <Industries /> */}
-        <Methodology />
         <Testimonial />
+        <Methodology />
         {/* <CaseStudy /> */}
         <ContactCTA />
         <FAQ />

@@ -29,37 +29,37 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('servicios')}
-              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
             >
               Servicios
             </button>
             {/* <button
               onClick={() => scrollToSection('industrias')}
-              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
             >
               Industrias
             </button> */}
-            <button
-              onClick={() => scrollToSection('metodologia')}
-              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
-            >
-              Metodología
-            </button>
             {/* <button
               onClick={() => scrollToSection('testimonio')}
-              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
             >
               Testimonio
             </button> */}
             <button
               onClick={() => scrollToSection('testimonio')}
-              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
             >
               Casos de éxito
             </button>
             <button
+              onClick={() => scrollToSection('metodologia')}
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
+            >
+              Metodología
+            </button>
+            <button
               onClick={() => scrollToSection('contacto')}
-              className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors"
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
             >
               Contacto
             </button>
@@ -69,7 +69,7 @@ export function Header() {
           <div className="hidden md:block">
             <Button
               onClick={() => scrollToSection('contacto')}
-              className="bg-[#FB923C] hover:bg-[#F97316] text-white px-6"
+              className="bg-[#ed6b1d] hover:bg-[#F97316] text-white px-6"
             >
               Agendá tu consulta
             </Button>
@@ -90,37 +90,37 @@ export function Header() {
             <nav className="flex flex-col gap-4">
               <button
                 onClick={() => scrollToSection('servicios')}
-                className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors text-left"
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
               >
                 Servicios
               </button>
               <button
                 onClick={() => scrollToSection('industrias')}
-                className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors text-left"
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
               >
                 Industrias
               </button>
               <button
                 onClick={() => scrollToSection('casos')}
-                className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors text-left"
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
               >
                 Casos
               </button>
               <button
                 onClick={() => scrollToSection('testimonio')}
-                className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors text-left"
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
               >
                 Testimonio
               </button>
               <button
                 onClick={() => scrollToSection('contacto')}
-                className="text-sm text-[#64748B] hover:text-[#FB923C] transition-colors text-left"
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
               >
                 Contacto
               </button>
               <Button
                 onClick={() => scrollToSection('contacto')}
-                className="bg-[#FB923C] hover:bg-[#F97316] text-white w-full"
+                className="bg-[#ed6b1d] hover:bg-[#F97316] text-white w-full"
               >
                 Agendar diagnóstico
               </Button>

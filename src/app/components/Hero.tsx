@@ -32,7 +32,7 @@ export function Hero() {
                 'Automatización de tareas repetitivas',
               ].map((benefit, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <CheckCircle2 className="text-[#FB923C] w-5 h-5 flex-shrink-0" />
+                  <CheckCircle2 className="text-[#ed6b1d] w-5 h-5 flex-shrink-0" />
                   <span className="text-[#0F172A]">{benefit}</span>
                 </div>
               ))}
@@ -41,7 +41,7 @@ export function Hero() {
             {/* <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => scrollToSection('contacto')}
-                className="bg-[#FB923C] hover:bg-[#F97316] text-white px-8 py-6 text-base"
+                className="bg-[#ed6b1d] hover:bg-[#F97316] text-white px-8 py-6 text-base"
               >
                 Agendar diagnóstico
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -49,7 +49,7 @@ export function Hero() {
               <Button
                 onClick={() => scrollToSection('casos')}
                 variant="outline"
-                className="border-[#E7E9F2] text-[#0F172A] hover:border-[#FB923C] hover:text-[#FB923C] px-8 py-6 text-base"
+                className="border-[#E7E9F2] text-[#0F172A] hover:border-[#ed6b1d] hover:text-[#ed6b1d] px-8 py-6 text-base"
               >
                 Ver casos de éxito
               </Button>
@@ -65,16 +65,16 @@ export function Hero() {
                 className="w-full h-auto"
               />
               {/* Subtle gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#FB923C]/5 to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#ed6b1d]/5 to-transparent pointer-events-none"></div>
             </div>
 
             {/* Floating metrics cards - Only visible on large screens */}
             {/* <div className="hidden xl:block absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 border border-[#E7E9F2]">
-              <div className="text-2xl font-bold text-[#FB923C]">+150</div>
+              <div className="text-2xl font-bold text-[#ed6b1d]">+150</div>
               <div className="text-sm text-[#64748B] whitespace-nowrap">Implementaciones</div>
             </div>
             <div className="hidden xl:block absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4 border border-[#E7E9F2]">
-              <div className="text-2xl font-bold text-[#FB923C]">98%</div>
+              <div className="text-2xl font-bold text-[#ed6b1d]">98%</div>
               <div className="text-sm text-[#64748B]">Satisfacción</div>
             </div> */}
           </div>

@@ -40,7 +40,7 @@ export function Methodology() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
-            <span className="text-sm text-[#FB923C] font-medium">Metodología</span>
+            <span className="text-sm text-[#ed6b1d] font-medium">Metodología</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
             Proceso probado, resultados garantizados
@@ -66,7 +66,7 @@ export function Methodology() {
                 <div className="relative z-10">
                   {/* Icon Circle */}
                   <div className="flex items-center mb-4 md:justify-center">
-                    <div className="w-12 h-12 bg-[#FB923C] rounded-full flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-[#ed6b1d] rounded-full flex items-center justify-center shadow-lg">
                       <step.icon className="w-6 h-6 text-white" />
                     </div>
                     {/* Step Number */}
@@ -77,7 +77,7 @@ export function Methodology() {
 
                   {/* Content Card */}
                   <div className="bg-white rounded-xl p-6 border border-[#E7E9F2] hover:border-[#FED7AA] hover:shadow-lg transition-all">
-                    {/* <div className="text-xs text-[#FB923C] font-medium mb-2 uppercase">
+                    {/* <div className="text-xs text-[#ed6b1d] font-medium mb-2 uppercase">
                       {step.duration}
                     </div> */}
                     <h3 className="text-lg font-semibold text-[#0F172A] mb-2">{step.title}</h3>

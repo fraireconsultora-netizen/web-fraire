@@ -80,7 +80,7 @@ export function ContactCTA() {
         <div className="bg-white rounded-3xl shadow-2xl border-2 border-[#FED7AA] overflow-hidden">
           <div className="grid lg:grid-cols-2 gap-0">
             {/* Left: Content */}
-            <div className="bg-gradient-to-br from-[#FB923C] to-[#F97316] p-8 md:p-12 text-white flex flex-col justify-center">
+            <div className="bg-gradient-to-br from-[#ed6b1d] to-[#F97316] p-8 md:p-12 text-white flex flex-col justify-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Agendá tu consulta
               </h2>
@@ -135,7 +135,7 @@ export function ContactCTA() {
                     value={formData.nombre}
                     onChange={handleChange}
                     placeholder="Juan Pérez"
-                    className="border-[#E7E9F2] focus:border-[#FB923C]"
+                    className="border-[#E7E9F2] focus:border-[#ed6b1d]"
                   />
                 </div>
 
@@ -151,7 +151,7 @@ export function ContactCTA() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="juan@empresa.com"
-                    className="border-[#E7E9F2] focus:border-[#FB923C]"
+                    className="border-[#E7E9F2] focus:border-[#ed6b1d]"
                   />
                 </div>
 
@@ -167,7 +167,7 @@ export function ContactCTA() {
                     value={formData.empresa}
                     onChange={handleChange}
                     placeholder="Mi Empresa S.A."
-                    className="border-[#E7E9F2] focus:border-[#FB923C]"
+                    className="border-[#E7E9F2] focus:border-[#ed6b1d]"
                   />
                 </div>
 
@@ -182,14 +182,14 @@ export function ContactCTA() {
                     value={formData.mensaje}
                     onChange={handleChange}
                     placeholder="Ej: Necesitamos unificar ventas, inventario y contabilidad en nuestras 3 sucursales..."
-                    className="border-[#E7E9F2] focus:border-[#FB923C] resize-none"
+                    className="border-[#E7E9F2] focus:border-[#ed6b1d] resize-none"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#FB923C] hover:bg-[#F97316] text-white py-6 text-base"
+                  className="w-full bg-[#ed6b1d] hover:bg-[#F97316] text-white py-6 text-base"
                 >
                   {isSubmitting ? 'Enviando consulta...' : 'Solicitar diagnóstico gratuito'}
                   <Send className="ml-2 w-5 h-5" />

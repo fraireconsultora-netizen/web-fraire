@@ -79,7 +79,7 @@ export function Industries() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
-            <span className="text-sm text-[#FB923C] font-medium">Pymes</span>
+            <span className="text-sm text-[#ed6b1d] font-medium">Pymes</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
             Soluciones adaptadas a tu negocio
@@ -97,8 +97,8 @@ export function Industries() {
               onClick={() => setActiveTab(index)}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                 activeTab === index
-                  ? 'bg-[#FB923C] text-white shadow-md'
-                  : 'bg-[#F8FAFC] text-[#64748B] hover:bg-[#FFF7ED] hover:text-[#FB923C]'
+                  ? 'bg-[#ed6b1d] text-white shadow-md'
+                  : 'bg-[#F8FAFC] text-[#64748B] hover:bg-[#FFF7ED] hover:text-[#ed6b1d]'
               }`}
             >
               <industry.icon className="w-4 h-4" />
@@ -118,7 +118,7 @@ export function Industries() {
               <ul className="space-y-3">
                 {industries[activeTab].pains.map((pain, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#FB923C] rounded-full mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-[#ed6b1d] rounded-full mt-2 flex-shrink-0"></div>
                     <span className="text-[#64748B]">{pain}</span>
                   </li>
                 ))}

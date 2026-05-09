@@ -45,7 +45,7 @@ export function FAQ() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
-            <span className="text-sm text-[#FB923C] font-medium">FAQ</span>
+            <span className="text-sm text-[#ed6b1d] font-medium">FAQ</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
             Preguntas frecuentes
@@ -78,7 +78,7 @@ export function FAQ() {
           <p className="text-[#64748B] mb-4">¿No encontraste tu respuesta?</p>
           <a
             href="#contacto"
-            className="text-[#FB923C] hover:text-[#F97316] font-medium underline underline-offset-4"
+            className="text-[#ed6b1d] hover:text-[#F97316] font-medium underline underline-offset-4"
           >
             Hablemos directamente →
           </a>

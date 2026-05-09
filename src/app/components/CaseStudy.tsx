@@ -15,12 +15,12 @@ export function CaseStudy() {
   ];
 
   return (
-    <section id="casos" className="py-16 md:py-24">
+    <section id="casos" className="pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           {/* <div className="inline-block px-4 py-1.5 bg-[#FFF7ED] border border-[#FED7AA] rounded-full mb-4">
-            <span className="text-sm text-[#FB923C] font-medium">Caso de éxito</span>
+            <span className="text-sm text-[#ed6b1d] font-medium">Caso de éxito</span>
           </div> */}
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
             Resultados clave
@@ -75,7 +75,7 @@ export function CaseStudy() {
           {/* AFTER */}
           <div className="bg-gradient-to-br from-[#FFF7ED] to-white rounded-2xl p-8 border-2 border-[#FED7AA] shadow-lg">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-[#FB923C] rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-[#ed6b1d] rounded-xl flex items-center justify-center">
                 <TrendingUp className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -91,25 +91,25 @@ export function CaseStudy() {
                   className="flex items-center justify-between p-4 bg-white rounded-lg border border-[#FED7AA]"
                 >
                   <div className="flex items-center gap-3">
-                    <metric.icon className="w-5 h-5 text-[#FB923C]" />
+                    <metric.icon className="w-5 h-5 text-[#ed6b1d]" />
                     <span className="text-sm text-[#64748B]">{metric.label}</span>
                   </div>
-                  <span className="font-bold text-[#FB923C]">{metric.value}</span>
+                  <span className="font-bold text-[#ed6b1d]">{metric.value}</span>
                 </div>
               ))}
             </div>
 
             <ul className="space-y-2 text-sm text-[#64748B]">
               <li className="flex items-start gap-2">
-                <span className="text-[#FB923C] mt-1">✓</span>
+                <span className="text-[#ed6b1d] mt-1">✓</span>
                 <span>Sistema único integrado end-to-end</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-[#FB923C] mt-1">✓</span>
+                <span className="text-[#ed6b1d] mt-1">✓</span>
                 <span>Stock sincronizado en tiempo real</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="text-[#FB923C] mt-1">✓</span>
+                <span className="text-[#ed6b1d] mt-1">✓</span>
                 <span>Dashboards automáticos con BI integrado</span>
               </li>
             </ul>
@@ -129,7 +129,7 @@ export function CaseStudy() {
               { value: '6 meses', label: 'ROI alcanzado' },
             ].map((result, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-[#FB923C] mb-2">
+                <div className="text-3xl md:text-4xl font-bold text-[#ed6b1d] mb-2">
                   {result.value}
                 </div>
                 <div className="text-sm text-[#64748B]">{result.label}</div>
