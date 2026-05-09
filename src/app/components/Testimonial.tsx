@@ -1,13 +1,10 @@
-import { useState } from 'react';
-import { Play, Quote, ArrowRight } from 'lucide-react';
+import { Quote, ArrowRight } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
 import { Badge } from '@/app/components/ui/badge';
-import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
-import { CaseStudy } from "./CaseStudy"
+import { CaseStudy } from "./CaseStudy";
+import CasoExitoImage from "../../assets/caso_exito_img.jpeg";
 
 export function Testimonial() {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   const scrollToContact = () => {
     const element = document.getElementById('contacto');
     if (element) {
@@ -24,11 +21,11 @@ export function Testimonial() {
             <span className="text-sm text-[#ed6b1d] font-medium">Casos de éxito</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
-            Escuchá de primera mano el impacto real
+            Odoo como eje de la transformación operativa de Aglietto Ingeniería SRL
           </h2>
           <p className="text-lg text-[#64748B]">
-            Resultados medibles. Así transformamos operaciones manuales en sistemas
-            eficientes.
+            Un caso de centralización operativa, información confiable y procesos más
+            profesionales.
           </p>
         </div>
 
@@ -42,46 +39,56 @@ export function Testimonial() {
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-[#0F172A] mb-6 leading-tight">
-                "Pasamos de planillas y caos a control total en semanas"
+                "Centralizamos la operación, mejoramos la confiabilidad de la información y nos
+                profesionalizamos"
               </h3>
 
-              <p className="text-lg text-[#64748B] leading-relaxed mb-8">
-                Antes de Odoo, cerrábamos el mes contable en 15 días con errores constantes. Hoy lo
-                hacemos en 3 días con trazabilidad completa. El inventario está sincronizado en
-                tiempo real entre todos nuestros puntos de venta y el almacén central. Ya no
-                perdemos ventas por falta de stock ni tenemos sobrantes ocultos. La decisión de
-                migrar a Odoo fue el cambio más importante que hicimos en los últimos 5 años.
-              </p>
+              <div className="space-y-4 text-lg text-[#64748B] leading-relaxed mb-8">
+                <p>
+                  Antes trabajábamos con sistemas aislados y múltiples planillas de Excel, lo que
+                  generaba reprocesos, falta de visibilidad y dificultades para obtener información
+                  confiable.
+                </p>
+                <p>
+                  Con la implementación de Odoo centralizamos compras, ventas, inventario y
+                  contabilidad en una única plataforma integrada, logrando que la gestión diaria sea
+                  mucho más ordenada y eficiente.
+                </p>
+                <p>
+                  Hoy operamos con información en tiempo real, reportes seguros y procesos
+                  estandarizados que nos brindan mayor trazabilidad, control y confianza para tomar
+                  decisiones estratégicas.
+                </p>
+              </div>
 
               {/* Metrics Badges */}
-              <div className="flex flex-wrap gap-3 mb-8">
+              {/* <div className="flex flex-wrap gap-3 mb-8">
                 <Badge
                   variant="outline"
                   className="bg-white border-[#FED7AA] text-[#0F172A] px-4 py-2 text-sm font-semibold"
                 >
-                  -35% errores
+                  Operación centralizada
                 </Badge>
                 <Badge
                   variant="outline"
                   className="bg-white border-[#FED7AA] text-[#0F172A] px-4 py-2 text-sm font-semibold"
                 >
-                  Cierre contable 50% más rápido
+                  Información en tiempo real
                 </Badge>
                 <Badge
                   variant="outline"
                   className="bg-white border-[#FED7AA] text-[#0F172A] px-4 py-2 text-sm font-semibold"
                 >
-                  Stock en tiempo real
+                  Procesos estandarizados
                 </Badge>
-              </div>
+              </div> */}
 
               {/* Author Info */}
               <div className="border-t border-[#FED7AA] pt-6 mb-6">
-                <p className="font-semibold text-[#0F172A] mb-1">Martín Rodríguez</p>
+                <p className="font-semibold text-[#0F172A] mb-1">Romina Diaz (Team Leader Admin - Contable) - Aglietto Ingeniería SRL</p>
                 <p className="text-sm text-[#64748B]">
-                  CFO / Director de Operaciones · Distribuidora del Sur
+                  Implementación de Odoo ERP | Compras · Ventas · Inventario · Contabilidad
                 </p>
-                <p className="text-sm text-[#ed6b1d] mt-1">Industria: Distribución mayorista</p>
               </div>
 
               {/* CTA */}
@@ -94,64 +101,16 @@ export function Testimonial() {
               </Button>
             </div>
 
-            {/* Right: Video Player */}
-            <div className="relative bg-gradient-to-br from-[#0F172A] to-[#1e293b] flex items-center justify-center p-8 md:p-12">
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 group">
-                {/* Video Thumbnail */}
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1762341111756-caf184156fa6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHByb2Zlc3Npb25hbCUyMG9mZmljZXxlbnwxfHx8fDE3Njg5OTAzNjB8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Cliente testimonio video"
-                  className="w-full h-full object-cover"
+            {/* Right: Case study image */}
+
+            <div className="relative bg-gradient-to-br from-[#0F172A] to-[#1e293b] flex items-center justify-center p-6 md:p-10">
+              <div className="relative w-full max-w-xl aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 bg-white">
+                <img
+                  src={CasoExitoImage}
+                  alt="Caso de éxito con Odoo"
+                  className="h-full w-full object-contain"
                 />
-
-                {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent group-hover:from-black/40 transition-all duration-300"></div>
-
-                {/* Play Button */}
-                <button
-                  onClick={() => setIsPlaying(!isPlaying)}
-                  className="absolute inset-0 flex items-center justify-center group cursor-pointer"
-                  aria-label="Reproducir video"
-                >
-                  <div className="w-20 h-20 bg-[#ed6b1d] hover:bg-[#F97316] rounded-full flex items-center justify-center shadow-2xl transform group-hover:scale-110 transition-all duration-300 ring-4 ring-white/20">
-                    <Play className="w-10 h-10 text-white ml-1" fill="white" />
-                  </div>
-                </button>
-
-                {/* Video Duration Badge */}
-                <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur-sm px-3 py-1.5 rounded-lg">
-                  <span className="text-white text-sm font-medium">1:12</span>
-                </div>
-
-                {/* Video Title Badge */}
-                <div className="absolute bottom-4 right-4 bg-black/80 backdrop-blur-sm px-3 py-1.5 rounded-lg max-w-[200px]">
-                  <span className="text-white text-xs">Cliente: CFO / Operaciones</span>
-                </div>
-
-                {/* If playing - show placeholder for actual video */}
-                {isPlaying && (
-                  <div className="absolute inset-0 bg-black flex items-center justify-center z-10">
-                    <div className="text-center text-white p-8">
-                      <Play className="w-16 h-16 mx-auto mb-4 opacity-50" />
-                      <p className="text-sm opacity-75">
-                        Video testimonial player
-                        <br />
-                        (Integrá con YouTube, Vimeo o tu plataforma de video)
-                      </p>
-                      <button
-                        onClick={() => setIsPlaying(false)}
-                        className="mt-4 px-4 py-2 bg-[#ed6b1d] hover:bg-[#F97316] rounded-lg text-sm transition-colors"
-                      >
-                        Cerrar
-                      </button>
-                    </div>
-                  </div>
-                )}
               </div>
-
-              {/* Decorative Elements */}
-              <div className="absolute top-8 right-8 w-32 h-32 bg-[#ed6b1d]/10 rounded-full blur-3xl animate-pulse"></div>
-              <div className="absolute bottom-8 left-8 w-40 h-40 bg-[#F97316]/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
         </div>
