@@ -4,6 +4,7 @@ import { TrustBar } from '@/app/components/TrustBar';
 import { Services } from '@/app/components/Services';
 import { Industries } from '@/app/components/Industries';
 import { Methodology } from '@/app/components/Methodology';
+import { AboutUs } from '@/app/components/AboutUs';
 import { Testimonial } from '@/app/components/Testimonial';
 import { CaseStudy } from '@/app/components/CaseStudy';
 import { FAQ } from '@/app/components/FAQ';
@@ -22,6 +23,7 @@ export default function App() {
         {/* <Industries /> */}
         <Testimonial />
         <Methodology />
+        <AboutUs />
         {/* <CaseStudy /> */}
         <ContactCTA />
         <FAQ />

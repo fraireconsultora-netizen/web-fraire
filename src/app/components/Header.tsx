@@ -58,6 +58,12 @@ export function Header() {
               Metodología
             </button>
             <button
+              onClick={() => scrollToSection('quienes-somos')}
+              className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
+            >
+              Quiénes somos
+            </button>
+            <button
               onClick={() => scrollToSection('contacto')}
               className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors"
             >
@@ -111,6 +117,18 @@ export function Header() {
                 className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
               >
                 Testimonio
+              </button>
+              <button
+                onClick={() => scrollToSection('metodologia')}
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
+              >
+                Metodología
+              </button>
+              <button
+                onClick={() => scrollToSection('quienes-somos')}
+                className="text-sm text-[#64748B] hover:text-[#ed6b1d] transition-colors text-left"
+              >
+                Quiénes somos
               </button>
               <button
                 onClick={() => scrollToSection('contacto')}
