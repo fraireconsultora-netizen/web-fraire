@@ -4,13 +4,13 @@ import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 export function CaseStudy() {
   const beforeMetrics = [
     { label: 'Cierre mensual', value: '15 días', icon: Clock, trend: 'bad' },
-    { label: 'Errores de stock', value: '23%', icon: TrendingUp, trend: 'bad' },
+    { label: 'Recuento de stock', value: 'Semanal', icon: TrendingUp, trend: 'bad' },
     { label: 'Tiempo de facturación', value: '4 horas/día', icon: Clock, trend: 'bad' },
   ];
 
   const afterMetrics = [
     { label: 'Cierre mensual', value: '3 días', icon: Clock, trend: 'good' },
-    { label: 'Errores de stock', value: '2%', icon: TrendingDown, trend: 'good' },
+    { label: 'Recuento de stock', value: 'Anual', icon: TrendingDown, trend: 'good' },
     { label: 'Tiempo de facturación', value: '30 min/día', icon: Clock, trend: 'good' },
   ];
 

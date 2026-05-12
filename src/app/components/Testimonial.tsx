@@ -39,8 +39,7 @@ export function Testimonial() {
               </div>
 
               <h3 className="text-2xl md:text-3xl font-bold text-[#0F172A] mb-6 leading-tight">
-                "Centralizamos la operación, mejoramos la confiabilidad de la información y nos
-                profesionalizamos"
+                "Centralizamos la operación, mejoramos la confiabilidad de la información y profesionalizamos la gestión de datos administrativos"
               </h3>
 
               <div className="space-y-4 text-lg text-[#64748B] leading-relaxed mb-8">
